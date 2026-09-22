@@ -6,7 +6,6 @@ import {
   Clock, 
   CheckCircle2, 
   ArrowUpRight, 
-  ShieldCheck, 
   Download, 
   Zap,
   ArrowRight,
@@ -33,7 +32,6 @@ export const DashboardOverview: React.FC<DashboardOverviewProps> = ({
 }) => {
   const approvedCount = applications.filter(a => a.status === 'Approved').length;
   const inReviewCount = applications.filter(a => a.status === 'Govt Verification').length;
-  const dispatchedCount = applications.filter(a => a.status === 'Dispatched').length;
 
   return (
     <div className="space-y-8 animate-in fade-in duration-200">

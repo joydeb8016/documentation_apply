@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, CheckCircle2, AlertTriangle, FileText, Download } from 'lucide-react';
+import { X, CheckCircle2, AlertTriangle, FileText } from 'lucide-react';
 import { documentSpecsGuide } from '../../data/mockData';
 
 interface SpecsGuideModalProps {

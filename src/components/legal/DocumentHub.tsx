@@ -8,14 +8,7 @@ import {
   ExternalLink, 
   ShieldCheck, 
   HelpCircle, 
-  Clock, 
   CheckCircle2, 
-  AlertCircle,
-  FileCheck,
-  Building2,
-  FileEdit,
-  Award,
-  Store,
   ChevronRight,
   Eye
 } from 'lucide-react';
@@ -38,7 +31,6 @@ export const DocumentHub: React.FC<DocumentHubProps> = ({
 }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedStatus, setSelectedStatus] = useState<string>('All');
-  const [selectedType, setSelectedType] = useState<string>('All');
 
   // Filtered applications
   const filteredApps = useMemo(() => {
@@ -50,11 +42,10 @@ export const DocumentHub: React.FC<DocumentHubProps> = ({
         app.contactPhone.includes(searchTerm);
 
       const matchesStatus = selectedStatus === 'All' || app.status === selectedStatus;
-      const matchesType = selectedType === 'All' || app.documentType === selectedType;
 
-      return matchesSearch && matchesStatus && matchesType;
+      return matchesSearch && matchesStatus;
     });
-  }, [applications, searchTerm, selectedStatus, selectedType]);
+  }, [applications, searchTerm, selectedStatus]);
 
   const statuses: (DocumentStatus | 'All')[] = [
     'All',

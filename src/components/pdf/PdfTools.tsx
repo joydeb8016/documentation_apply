@@ -4,10 +4,7 @@ import {
   Crop, 
   FileType, 
   Layers, 
-  ShieldCheck, 
-  Sparkles,
-  Lock,
-  Download
+  Lock
 } from 'lucide-react';
 import { CompressTool } from './CompressTool';
 import { MergeTool } from './MergeTool';
