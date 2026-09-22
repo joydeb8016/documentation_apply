@@ -4,17 +4,11 @@ import {
   X, 
   Send, 
   Bot, 
-  User, 
-  Sparkles, 
-  FileText, 
   ShoppingBag, 
   FileStack, 
   Headphones, 
   ChevronRight, 
-  CheckCircle2, 
-  ArrowUpRight,
-  ShieldCheck,
-  AlertCircle
+  ArrowUpRight
 } from 'lucide-react';
 import type { ChatMessage, ActiveTab, Product, LegalApplication } from '../../types';
 

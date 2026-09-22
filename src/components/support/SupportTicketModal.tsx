@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, Headphones, Send, CheckCircle2, ShieldCheck } from 'lucide-react';
+import { X, Headphones, Send, CheckCircle2 } from 'lucide-react';
 import type { SupportTicket } from '../../types';
 
 
